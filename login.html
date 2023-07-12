@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+	<title> LOG IN PAGE </title>
+	<meta charset ="utf-8">
+	<meta name="viewpoint " content="width=device-width initial-scale=0">
+	/*<link rel="stylesheat" href ="style.css">*/
+	*{
+		margin:0px;
+		padding:0px;
+		font-family: vardana;
+
+}
+.items{
+	height:100px;
+	width:100%;
+	color:white;
+	/*background-color:gray;*/
+}
+.item{
+	max-width: 1100px;
+	width:100%;
+	/*background-color:green;*/
+	margin:10px;
+	text-align: center;
+	column-gap: 50px;
+	/*margin:auto;*/
+	position:flex;
+}
+.itemlogo{
+	font-size:25px;
+	margin :100px;
+	padding:30px;
+	position:relative;
+}
+.login{
+	text-align: right;
+    padding-right: 10px;
+    border:2px solid white;
+    background-color:rgba(230,230,230,0.8);
+    float: right;
+    position:relative;
+    margin-right: 150px;
+}
+.body{
+	background-image:url("https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+	width:100%;
+	height:100%;
+	position:flex;
+	background-size: cover;
+	background-origin: center;
+}
+.para{
+	width:300px;
+	height:250px;
+	color:black;
+	background-color:white;
+	text-align:center;
+	margin:auto;
+	padding:4px;
+	border:2px solid blue;
+	margin-top: 80px;
+	border-radius: 20px;
+	display: none;
+}
+.email{
+	text-align: left;
+}
+.pas{
+	text-align:left;
+}
+.signin{
+	color:rgba(240,240,240,0.7);
+}
+.signin{
+	text-align:center;
+	color:red;
+}
+.cloasepage{
+	font-size: 20px;
+	float:right;
+}
+.signupcontainer{
+width:300px;
+	height:350px;
+	color:black;
+	background-color:white;
+	text-align:center;
+	margin:auto;
+	padding:4px;
+	border:2px solid blue;
+	margin-top: 80px;
+	border-radius: 20px;
+	display: none;
+
+}
+	</style>
+	<script type="text/javascript">
+		function log(){
+		document.getElementById("pag").style.display = "block";
+
+		}
+		function closelog(){
+			document.getElementById("pag").style.display="none";
+		}
+		function sig(){
+			document.getElementById("sig").style.display="block";
+			document.getElementById("pag").style.display="none";
+		
+
+		}
+		function closesign(){
+			document.getElementById("sig").style.display="none";
+		}
+		
+
+
+	</script>
+
+	</head>
+	<body class="body">
+		<div class ="container">
+			<div class="items">
+				<a href="#"  class="itemlogo" > CODING LAB </a>
+				<a href="#"  class="item"> HOME </a>
+				<a href="#"  class="item"> PROMPT </a>		
+			    <a href="#"  class="item"> SOURCE </a>		
+				<a href="#"  class="item"> CONTACT US</a>
+				<button class="login" onclick="log()"  >  LOGIN </button>
+                </div>
+
+		</div>
+		<div   class="para" id="pag" > 
+			<button class ="cloasepage"  onclick="closelog()"> x </button>
+<p class="page" >  LOGIN </p>
+<p class="email"> Email</p>
+<input type="email" placeholder="Enter Your Email">
+<p class="pas"> Password </p>
+<input type="password" placeholder="Enter Your Password">
+<button  class="btn"type="submit" value="submit"> Submit</button> 
+ <p class ="signin" > don't have an account please  </p>
+
+ <a href="#" class="signina" onclick="sig()" > Sign up</a> 
+			
+ </div>
+
+
+
+ <div class="signupcontainer" id="sig">
+ 	<button class ="cloasepage"  onclick="closesign()"> x </button>
+<p class="page" >  SIGN UP </p>
+<p class="email"> Email</p>
+<input type="email" placeholder="Enter Your Email">
+<p class="pas"> Password </p>
+<input type="password" placeholder="Enter Your Password">
+
+<p class="pas"> Conform Password </p>
+<input type="password" placeholder="Enter Your Conform Password">
+<button  class="btn"type="submit" value="submit"> Sign up now</button> 
+ <p class ="signin" > Already have an account? </p>
+
+ <a href="#" class="signina"> login</a>
+ </div>
+
+      
+	</body>
+</html>
